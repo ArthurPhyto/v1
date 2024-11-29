@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.crawl-form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.crawl-form input[type="url"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.crawler-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.crawler-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.crawler-status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.crawler-status.pending {
+    background-color: #f1c40f;
+    color: #fff;
+}
+
+.crawler-status.running {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.crawler-status.completed {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.crawler-status.error {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.crawler-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.url-list {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.url-item {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    word-break: break-all;
+}
+
+.expired-domain {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.external-site {
+    color: #2980b9;
+}
+
+.error {
+    color: #e74c3c;
+    background-color: #fdf1f0;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.stats {
+    background: #34495e;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.source-url {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.error-container {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fdf1f0;
+    color: #e74c3c;
+    display: none;
+}
+
+.error-container.visible {
+    display: block;
+}
